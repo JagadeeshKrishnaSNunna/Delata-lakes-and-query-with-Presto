@@ -133,7 +133,7 @@
          1. delta.properties
          2. hive.properties
          3. jmx.properties
-         
+
 ### Start Presto server
         
         Start hive hcatalog server first
@@ -146,3 +146,11 @@
         $ mv presto-CLI-0.276.jar presto-CLI
         $ chmod 777 presto-CLI
         $ ./presto-CLI --server localhost:8080 --catalog delta
+
+### Access the delta table in hive/Presto
+
+        create the table in hive and query it with presto delta catalog
+                create table table-name(col1 type,....)
+                STORED BY 'io.delta.hive.DeltaStorageHandler'
+                LOCATION '/delta/table/path'
+
