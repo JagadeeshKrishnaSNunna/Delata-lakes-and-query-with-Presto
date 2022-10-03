@@ -149,8 +149,12 @@
 
 ### Access the delta table in hive/Presto
 
+        add delta-hive-assembly_<scala_version>-<delta_connectors_version>.jar in hive lib
+
         create the table in hive and query it with presto delta catalog
                 create table table-name(col1 type,....)
                 STORED BY 'io.delta.hive.DeltaStorageHandler'
                 LOCATION '/delta/table/path'
+
+        
 
