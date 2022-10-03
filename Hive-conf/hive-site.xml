@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+<configuration>
+
+<property>
+  <name>javax.jdo.option.ConnectionURL</name>
+  <value>jdbc:derby:/home/adminuser79/mystuff/tools/hive/conf/metastore_db;create=true</value>
+</property>
+
+
+<property>
+  <name>javax.jdo.option.ConnectionDriverName</name>
+  <value>org.apache.derby.jdbc.EmbeddedDriver</value>
+</property>
+
+<property>
+  <name>datanucleus.autoCreateSchema</name>
+  <value>true</value>
+</property>
+<property>
+  <name>datanucleus.fixedDatastore</name>
+  <value>true</value>
+</property>
+
+<property>
+ <name>datanucleus.autoCreateTables</name>
+ <value>True</value>
+ </property>
+
+<property>
+  <name>hive.input.format</name>
+  <value>io.delta.hive.HiveInputFormat</value>
+</property>
+<property>
+  <name>hive.tez.input.format</name>
+  <value>io.delta.hive.HiveInputFormat</value>
+</property>
+
+</configuration>
