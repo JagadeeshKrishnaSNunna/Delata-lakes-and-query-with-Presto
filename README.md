@@ -156,5 +156,10 @@
                 STORED BY 'io.delta.hive.DeltaStorageHandler'
                 LOCATION '/delta/table/path'
 
+## use Script
         
+        To start hadoop,hcatalog,presto and presto-cli
+                $ ./start.sh
+        To stop all services
+                $ ./stop.sh
 
