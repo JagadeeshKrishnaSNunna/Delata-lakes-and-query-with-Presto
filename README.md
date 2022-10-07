@@ -104,7 +104,7 @@
 
 ## Setup spark
 
-    Download hadoop-2.10.2.tar.gz
+    Download spark-3.2.2-bin-hadoop3.2.tgz
 
     Set up env variable
         export SPARK_HOME=/home/adminuser79/mystuff/tools/spark
