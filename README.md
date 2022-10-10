@@ -73,8 +73,8 @@
 
 ### setup HDFS for Hive
         
-        $ $HADOOP_HOME/bin/hadoop fs -mkdir       /tmp
-        $ $HADOOP_HOME/bin/hadoop fs -mkdir       /user/hive/warehouse
+        $ $HADOOP_HOME/bin/hadoop fs -mkdir -p /tmp
+        $ $HADOOP_HOME/bin/hadoop fs -mkdir -p /user/hive/warehouse
         $ $HADOOP_HOME/bin/hadoop fs -chmod 777   /tmp
         $ $HADOOP_HOME/bin/hadoop fs -chmod 777   /user/hive/warehouse
 
